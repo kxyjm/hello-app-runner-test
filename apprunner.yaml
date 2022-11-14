@@ -3,8 +3,8 @@ runtime: python3
 build:
   commands:
     build:
-    - echo "Test build 1" && yum install -y pycairo
-    - echo "Test build 2" && pip install -r requirements.txt
+    - yum install -y pycairo
+    - pip install -r requirements.txt
 run:
   command: echo "Test run" && python app.py
   network:
